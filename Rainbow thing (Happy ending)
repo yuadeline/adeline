@@ -1,0 +1,189 @@
+# Tutorial 3.1
+# CircuitPython demo - NeoPixel
+
+import time
+import board
+import neopixel
+
+pixpin = board.A3
+numpix = 128
+
+strip = neopixel.NeoPixel(pixpin, numpix, brightness=0.05, auto_write=False)
+
+while True:
+    # set color to red
+    strip[29] = (255,0,0)
+    strip[36] = (255,0,0)
+    strip[43] = (255,0,0)
+    strip[51] = (255,0,0)
+    strip[81] = (255,0,0)
+    strip[22] = (255,0,0)
+    strip[23] = (255,0,0)
+    strip[80] = (255,0,0)
+    strip[90] = (255,0,0)
+    strip[99] = (255,0,0)
+    strip[108] = (255,0,0)
+    strip[116] = (255,0,0)
+    strip.write()
+    time.sleep(1)
+
+    # set color to orange / turn off light
+    strip[30] = (255,128,0)
+    strip[31] = (255,128,0)
+    strip[88] = (255,128,0)
+    strip[89] = (255,128,0)
+    strip[37] = (255,128,0)
+    strip[44] = (255,128,0)
+    strip[52] = (255,128,0)
+    strip[98] = (255,128,0)
+    strip[107] = (255,128,0)
+    strip[115] = (255,128,0)
+    strip.write()
+    time.sleep(1)
+
+    # set color to green
+    strip[53] = (0,255,0)
+    strip[45] = (0,255,0)
+    strip[38] = (0,255,0)
+    strip[39] = (0,255,0)
+    strip[96] = (0,255,0)
+    strip[97] = (0,255,0)
+    strip[106] = (0,255,0)
+    strip[114] = (0,255,0)
+    strip.write()
+    time.sleep(1)
+
+    # set color to blue
+    strip[10] = (0,128,255)
+    strip[12] = (0,128,255)
+    strip[84] = (0,128,255)
+    strip.write()
+    time.sleep(0.45)
+
+    # set color to purple
+    strip[19] = (102,102,255)
+    strip[75] = (102,102,255)
+    strip[77] = (102,102,255)
+    strip.write()
+    time.sleep(0.45)
+
+    # set color to black / turn off light
+    strip[53] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[45] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[39] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[96] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[97] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[106] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[114] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[115] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[107] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[98] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[89] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[88] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[31] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[30] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[37] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[44] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[52] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[51] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[43] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[36] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[29] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[22] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[23] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[80] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[81] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[90] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[99] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[108] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[116] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
