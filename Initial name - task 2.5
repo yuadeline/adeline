@@ -1,0 +1,142 @@
+# Tutorial 2.1
+# CircuitPython demo - NeoPixel
+
+import time
+
+import board
+import neopixel
+
+pixpin = board.A3
+numpix = 128
+
+strip = neopixel.NeoPixel(pixpin, numpix, brightness=0.1, auto_write=False)
+
+while True:
+
+    # set brightness to a high value.  1.0 is the maximum value, 0.0 is the lowest
+    strip.brightness = 0.01
+
+    strip[13] = (0,213,255)
+    strip[20] = (0,213,255)
+    strip[22] = (0,213,255)
+    strip[28] = (0,213,255)
+    strip[29] = (0,213,255)
+    strip[30] = (0,213,255)
+    strip[36] = (0,213,255)
+    strip[38] = (0,213,255)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[28] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,213,255)
+    strip[20] = (0,213,255)
+    strip[22] = (0,213,255)
+    strip[28] = (0,213,255)
+    strip[29] = (0,213,255)
+    strip[30] = (0,213,255)
+    strip[36] = (0,213,255)
+    strip[38] = (0,213,255)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[28] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,213,255)
+    strip[20] = (0,213,255)
+    strip[22] = (0,213,255)
+    strip[28] = (0,213,255)
+    strip[29] = (0,213,255)
+    strip[30] = (0,213,255)
+    strip[36] = (0,213,255)
+    strip[38] = (0,213,255)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[28] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,213,255)
+    strip[20] = (0,213,255)
+    strip[22] = (0,213,255)
+    strip[28] = (0,213,255)
+    strip[29] = (0,213,255)
+    strip[30] = (0,213,255)
+    strip[36] = (0,213,255)
+    strip[38] = (0,213,255)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[28] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[13] = (0,213,255)
+    strip[20] = (0,213,255)
+    strip[22] = (0,213,255)
+    strip[28] = (0,213,255)
+    strip[29] = (0,213,255)
+    strip[30] = (0,213,255)
+    strip[36] = (0,213,255)
+    strip[38] = (0,213,255)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[73] = (0,102,204)
+    strip[75] = (0,102,204)
+    strip[81] = (0,102,204)
+    strip[83] = (0,102,204)
+    strip[90] = (0,102,204)
+    strip[98] = (0,102,204)
+    strip.write()
+    time.sleep(1)
+
+    strip[73] = (0,0,0)
+    strip[75] = (0,0,0)
+    strip[81] = (0,0,0)
+    strip[83] = (0,0,0)
+    strip[90] = (0,0,0)
+    strip[98] = (0,0,0)
+    strip[13] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[28] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip.write()
+    time.sleep(1)
