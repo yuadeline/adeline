@@ -1,0 +1,82 @@
+# Tutorial 2.1
+# CircuitPython demo - NeoPixel
+
+import time
+
+import board
+import neopixel
+
+pixpin = board.A3
+numpix = 128
+
+strip = neopixel.NeoPixel(pixpin, numpix, brightness=0.1, auto_write=False)
+
+while True:
+
+    # set brightness to a high value.  1.0 is the maximum value, 0.0 is the lowest
+    strip.brightness = 0.7
+
+    for a in range(0,4):
+        strip[20] = (255,0,0)
+        strip[27] = (255,0,0)
+        strip[29] = (255,0,0)
+        strip[35] = (255,0,0)
+        strip[36] = (255,0,0)
+        strip[37] = (255,0,0)
+        strip[43] = (255,0,0)
+        strip[45] = (255,0,0)
+        strip.write()
+        time.sleep(0.1)
+
+        for x in range (20,46):
+            strip[x]=(0,0,0)
+        strip.write()
+        time.sleep(0.1)
+
+    strip[82] = (75,0,0)
+    strip[84] = (75,0,0)
+    strip[91] = (75,0,0)
+    strip[99] = (75,0,0)
+    strip[107] = (75,0,0)
+    strip.write()
+    time.sleep(1)
+
+    strip[82] = (0,0,0)
+    strip[84] = (0,0,0)
+    strip[91] = (0,0,0)
+    strip[99] = (0,0,0)
+    strip[107] = (0,0,0)
+    strip.write()
+    time.sleep(1)
+
+    strip[20] = (75,0,0)
+    strip[27] = (75,0,0)
+    strip[29] = (75,0,0)
+    strip[35] = (75,0,0)
+    strip[36] = (75,0,0)
+    strip[37] = (75,0,0)
+    strip[43] = (75,0,0)
+    strip[45] = (75,0,0)
+    strip[82] = (75,0,0)
+    strip[84] = (75,0,0)
+    strip[91] = (75,0,0)
+    strip[99] = (75,0,0)
+    strip[107] = (75,0,0)
+    strip.write()
+    time.sleep(2)
+
+    strip[20] = (0,0,0)
+    strip[27] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[35] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[37] = (0,0,0)
+    strip[43] = (0,0,0)
+    strip[45] = (0,0,0)
+    strip[82] = (0,0,0)
+    strip[84] = (0,0,0)
+    strip[91] = (0,0,0)
+    strip[99] = (0,0,0)
+    strip[107] = (0,0,0)
+    strip.write()
+    time.sleep(1)
