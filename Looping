@@ -1,0 +1,13 @@
+  for x in range(0,3):
+        strip[x] = (255,0,0)
+    for x in range(10,13):
+        strip[x] = (255,0,0)
+    strip.write()
+    time.sleep(1)
+    
+    for x in range(0,3):
+        strip[x] = (0,0,0)
+    for x in range(10,13):
+        strip[x] = (0,0,0)
+    strip.write()
+    time.sleep(1)
