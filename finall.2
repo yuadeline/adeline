@@ -1,4 +1,4 @@
-    # Tutorial 2.5
+    # Tutorial 2.7
 # CircuitPython demo - NeoPixel
 
 import time
@@ -15,7 +15,7 @@ while True:
 
     # set brightness to a high value.  1.0 is the maximum value, 0.0 is the lowest
     strip.brightness = 0.01
-    
+
     strip[10] = (255,0,0)
     strip[11] = (255,0,0)
     strip[17] = (255,0,0)
@@ -51,10 +51,43 @@ while True:
     strip[117] = (255,0,0)
     strip.write()
     time.sleep(0.05)
-    
-    
-    turn off everything
-    
+
+    strip[10] = (0,0,0)
+    strip[11] = (0,0,0)
+    strip[17] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[25] = (0,0,0)
+    strip[33] = (0,0,0)
+    strip[41] = (0,0,0)
+    strip[50] = (0,0,0)
+    strip[51] = (0,0,0)
+    strip[44] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[35] = (0,0,0)
+    strip[15] = (0,0,0)
+    strip[72] = (0,0,0)
+    strip[22] = (0,0,0)
+    strip[30] = (0,0,0)
+    strip[38] = (0,0,0)
+    strip[46] = (0,0,0)
+    strip[55] = (0,0,0)
+    strip[112] = (0,0,0)
+    strip[105] = (0,0,0)
+    strip[97] = (0,0,0)
+    strip[89] = (0,0,0)
+    strip[81] = (0,0,0)
+    strip[85] = (0,0,0)
+    strip[94] = (0,0,0)
+    strip[101] = (0,0,0)
+    strip[102] = (0,0,0)
+    strip[103] = (0,0,0)
+    strip[100] = (0,0,0)
+    strip[99] = (0,0,0)
+    strip[110] = (0,0,0)
+    strip[117] = (0,0,0)
+    strip.write()
+    time.sleep(0.05)
+
     strip[14] = (255,128,0)
     strip[22] = (255,128,0)
     strip[23] = (255,128,0)
@@ -101,5 +134,10 @@ while True:
     strip[96] = (102,52,0)
     strip[47] = (102,52,0)
     strip[105] = (102,52,0)
+    strip.write()
+    time.sleep(0.05)
+
+    strip[37] = (0,255,255)
+    strip[99] = (0,255,255)
     strip.write()
     time.sleep(0.05)
