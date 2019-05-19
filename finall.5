@@ -1,0 +1,84 @@
+# Tutorial 3
+# CircuitPython demo - NeoPixel
+
+import time
+
+import board
+import neopixel
+
+pixpin = board.A3
+numpix = 128
+
+strip = neopixel.NeoPixel(pixpin, numpix, brightness=0.1, auto_write=False)
+
+while True:
+
+    # set brightness to a high value.  1.0 is the maximum value, 0.0 is the lowest
+    strip.brightness = 0.01
+
+    strip[18] = (0,255,255)
+    strip[19] = (0,255,255)
+    strip[20] = (0,255,255)
+    strip[29] = (0,255,255)
+    strip[26] = (0,255,255)
+    strip[34] = (0,255,255)
+    strip[35] = (0,255,255)
+    strip[36] = (0,255,255)
+    strip[45] = (0,255,255)
+    strip[42] = (0,255,255)
+    strip[51] = (0,255,255)
+    strip[52] = (0,255,255)
+    strip[81] = (0,255,255)
+    strip[23] = (0,255,255)
+    strip[31] = (0,255,255)
+    strip[39] = (0,255,255)
+    strip[47] = (0,255,255)
+    strip[112] = (0,255,255)
+    strip[105] = (0,255,255)
+    strip[97] = (0,255,255)
+    strip[89] = (0,255,255)
+    strip[83] = (0,255,255)
+    strip[91] = (0,255,255)
+    strip[99] = (0,255,255)
+    strip[100] = (0,255,255)
+    strip[101] = (0,255,255)
+    strip[93] = (0,255,255)
+    strip[85] = (0,255,255)
+    strip[108] = (0,255,255)
+    strip[116] = (0,255,255)
+    strip.write()
+    time.sleep(0.6)
+
+    strip[18] = (0,0,0)
+    strip[19] = (0,0,0)
+    strip[20] = (0,0,0)
+    strip[29] = (0,0,0)
+    strip[26] = (0,0,0)
+    strip[34] = (0,0,0)
+    strip[35] = (0,0,0)
+    strip[36] = (0,0,0)
+    strip[45] = (0,0,0)
+    strip[42] = (0,0,0)
+    strip[51] = (0,0,0)
+    strip[52] = (0,0,0)
+    strip[81] = (0,0,0)
+    strip[23] = (0,0,0)
+    strip[31] = (0,0,0)
+    strip[39] = (0,0,0)
+    strip[47] = (0,0,0)
+    strip[112] = (0,0,0)
+    strip[105] = (0,0,0)
+    strip[97] = (0,0,0)
+    strip[89] = (0,0,0)
+    strip[83] = (0,0,0)
+    strip[91] = (0,0,0)
+    strip[99] = (0,0,0)
+    strip[100] = (0,0,0)
+    strip[101] = (0,0,0)
+    strip[93] = (0,0,0)
+    strip[85] = (0,0,0)
+    strip[108] = (0,0,0)
+    strip[116] = (0,0,0)
+    strip.write()
+    time.sleep(0.2)
+    time.sleep(0.2)
